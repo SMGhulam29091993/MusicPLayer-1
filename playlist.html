@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="playlist.css">
+    <script src="https://kit.fontawesome.com/1013d8b8e8.js" crossorigin="anonymous"></script>
+    <title>Music-Player-1</title>
+</head>
+<body>
+    <nav>
+        <div id="left">
+            <div id="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Aqualung_music_player_drop_icon.svg/1024px-Aqualung_music_player_drop_icon.svg.png" alt="music-player-logo">
+                <span>Faiyaz</span>
+            </div>
+            <span class="music-list-type">Favourites</span>
+        </div>
+        <div id="right">
+            <div id="search">
+                <form action="">
+                    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="search-bar" placeholder="Search">
+                    <button type="button" class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+                </form>
+            </div>
+            <div class="notification">
+                <span><i class="fa-solid fa-bell"></i></span>
+            </div>
+            <div id="profile-pic">
+                <img src="image/my-image.jpg" alt="profile-pic">
+            </div>
+        </div>   
+    </nav>
+    <main>
+        <div id="song-box">
+            <!-- NOTE THIS CAROSEL EFFECT IS GIVEN USING ANIMATION WITH FADE-IN EFFECT WITHOUT USING BOOTSTRAP -->
+            <div class="carousel">
+                <div class="band-slide">
+                  <img src="image/cold-play-1.jpg" alt="Band 1">
+                  <div class="band-info">
+                    <div class="band-name-followers">
+                      <h2>ColdPlay</h2>
+                      <p>851 Followers</p>
+                    </div>
+                    <div class="details">
+                        <p class="british-band">British Band</p>
+                        <p>Coldplay: British rock band known for their melodic sound, captivating performances, and chart-topping hits like "Viva La Vida" and "Yellow.</p>
+                    </div>
+                    <button class="play-btn">Play All</button>
+                    <span><button class="follow-btn">Follow</button></span>
+                    <span class="track-album">247 Tracks | 128 Albums</span>
+                   </div>
+                </div>
+            </div>           
+            <!-- <div class="carousel">
+                <div class="song-image">
+                    <img src="image/cold-play-1.jpg" alt="song-image">
+                </div>
+                <div class="about-song">
+                    <div id="name-follower">
+                        <h3 class="song-name">ColdPLay</h3>
+                        <span>British Band</span>
+                        <p class="followers">851 followers</p>
+                    </div>
+                    <div class="song-details">
+                        <p>Coldplay: British rock band known for their melodic sound, captivating performances, and chart-topping hits like "Viva La Vida" and "Yellow."</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="song-list">
+                <div class="scrollbar">
+                    <div class="scrollbar-inner">
+                        <div class="playlist-song">
+                            <ul>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                                <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>                     
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="song-queue">
+            <div class="scrollbar">
+                <div class="scrollbar-inner">
+                    <a href="#">X</a>
+                    <div class="similar-artist-header">
+                        <h3>Similar Artist</h3>
+                        <span><a href="#">View all</a></span>
+                    </div>
+                    <div class="similar-artist-song">
+                        <ul>
+                            <li><span class="name">song1</span><span class="duration">4:00</span></li>
+                            <li><span class="name">song1</span><span class="duration">4:00</span></li>
+                            <li><span class="name">song1</span><span class="duration">4:00</span></li>
+                            <li><span class="name">song1</span><span class="duration">4:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="similar-artist-header">
+                        <h3>Recently Played</h3>
+                        <span><a href="#">View all</a></span>
+                    </div>
+                    <div class="recently-played-song">
+                        <ul>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>
+                            <li><span class="name">song2</span><span class="duration"><i class="fas fa-heart"></i></span></li>                     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="music-player">
+          <div class="player-image">
+            <img src="image/cold-play-2.jpg" alt="Music Playing">
+          </div>
+          <div class="player-controls">
+            <div class="control-btn">
+              <i class="fas fa-backward"></i>
+            </div>
+            <div class="control-btn">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="control-btn">
+              <i class="fas fa-forward"></i>
+            </div>
+          </div>
+          <div class="time-slider">
+            <input type="range" id="time-range" min="0" value="0">
+          </div>
+          <div class="player-options">
+            <div class="option-btn">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="option-btn">
+                <!-- for screen size smaller then 900px click on the list icon to 
+                    get the queue song list that was on the side got hidden for smaller screen  -->
+                <a href="#song-queue" style="text-decoration: none; color:white;"><i class="fas fa-list"></i></a>  
+            </div>
+          </div>
+        </div>
+      </footer>     
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+</body>
+</html>
